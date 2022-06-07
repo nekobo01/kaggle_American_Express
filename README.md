@@ -45,9 +45,9 @@ R_* = リスク変数
 このデータセットでは、ネガティブ・クラスは5%でサブサンプルされているので、スコアリング・メトリックでは20倍の重み付けを受けることに注意してください。
 	
 
-| ファイル名                          | 説明                                                                |
+| ファイル名                          | 説明|
 | ---------------------------------- | ----------------------------------------------- |
-|train_data.csv											 | - customer_IDごとに複数のstatement dateを持つトレーニングデータ。|
-|train_labels.csv                    | - 各 customer_ID のターゲットラベル。|
-|test_data.csv											 | - 対応するテストデータ、あなたの目的は、各 customer_ID のターゲット ラベルを予測することです。|
-|sample_submission.csv               | - 正しいフォーマットで作成されたサンプルファイル|
+|train_data.csv|customer_IDごとに複数のstatement dateを持つトレーニングデータ。|
+|train_labels.csv|各 customer_ID のターゲットラベル。|
+|test_data.csv|対応するテストデータ、あなたの目的は、各 customer_ID のターゲット ラベルを予測することです。|
+|sample_submission.csv|正しいフォーマットで作成されたサンプルファイル|
