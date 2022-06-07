@@ -1,10 +1,9 @@
 # kaggle_American_Express
-
-### Title American Express - Default Prediction
+- Title American Express - Default Prediction
 URL	  https://www.kaggle.com/competitions/amex-default-prediction
 Timeline	2022/5/25 ⇒ 2022/8/24
 
-### Description
+- Description
 レストランでの食事やコンサートのチケット購入など、現代の生活では日々の買い物にクレジットカードの利便性が欠かせません。
 クレジットカードがあれば、多額の現金を持ち歩く必要がなく、また、買い物の全額を前払いして、長期にわたって支払うことができます。
 しかし、カード発行会社は、私たちが請求した金額をきちんと返済してくれることをどうやって確認するのでしょうか？
@@ -20,14 +19,14 @@ Timeline	2022/5/25 ⇒ 2022/8/24
 優れたソリューションは、世界最大のクレジットカード発行会社が使用しているクレジットデフォルト予測モデルに挑戦し、賞金やアメリカン・エキスプレスとの面接の機会、
 そしてやりがいのある新しいキャリアを獲得する可能性があります。
 
-### Evaluation
+- Evaluation
 このコンペティションの評価指標である , Mは、順位付けのための2つの指標の平均値である。
 正規化ジニ係数（Normalized Gini Coefficient) ,G および4%時点のデフォルト率（default rate captured at 4%,D.
 4%で捕捉されるデフォルト率は，予測値の最高位である4%以内に捕捉された正のラベル（デフォルト）の割合であり，感度/想起統計量を表している．
 サブメトリクスのG,Dの両方と 、ネガティブラベルには、ダウンサンプリングを調整するために20の重みが与えられます。
 このメトリクスの最大値は1.0である。
 
-### Data
+- Data
 このコンペティションの目的は、毎月の顧客プロファイルに基づいて、ある顧客が将来クレジットカードの残高を返さない確率を予測することです。
 対象の二項変数は、最新のクレジットカード明細書から18ヶ月間のパフォーマンスウィンドウを観察することによって計算され、
 もし顧客が最新の明細書の日付から120日以内に返済額を支払わない場合は、デフォルトイベントとみなされます。
@@ -51,3 +50,13 @@ R_* = リスク変数
 |train_labels.csv|各 customer_ID のターゲットラベル。|
 |test_data.csv|対応するテストデータ、あなたの目的は、各 customer_ID のターゲット ラベルを予測することです。|
 |sample_submission.csv|正しいフォーマットで作成されたサンプルファイル|
+
+- directory tree
+```
+/kaggle/input/amex-default-prediction/
+├── README.md
+├── sample_submission.csv		<---- 
+├── train_data.csv  				<---- 110万行×190特徴量がcustomer_ID別に掲載
+├── test_data.csv           <---- 
+└── train_labels.csv  			<---- customer_ID別に離反結果が掲載(目的変数)
+```
