@@ -55,8 +55,8 @@ R_* = リスク変数
 ```
 /kaggle/input/amex-default-prediction/
 ├── README.md
-├── sample_submission.csv		<---- 
-├── train_data.csv  				<---- 110万行×190特徴量がcustomer_ID別に掲載
-├── test_data.csv           <---- 
-└── train_labels.csv  			<---- customer_ID別に離反結果が掲載(目的変数)
+├── sample_submission.csv	<---- 
+├── train_data.csv		<---- 110万行×190特徴量がcustomer_ID別に掲載
+├── test_data.csv		<---- 
+└── train_labels.csv		<---- customer_ID別に離反結果が掲載(目的変数)
 ```
