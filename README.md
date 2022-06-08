@@ -64,4 +64,4 @@ R_* = リスク変数
 ### log_date
 | 日付| 説明|
 | ---------------------------------- | ----------------------------------------------- |
-|2022-06-09|データ量が多くて主成分分析が回っていない<br>https://www.kaggle.com/code/aliphya/who-would-default-next|
+|2022-06-09|データ量が多くて主成分分析が回っていない<br>読む⇒https://www.kaggle.com/code/aliphya/who-would-default-next|
