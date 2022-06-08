@@ -60,3 +60,8 @@ R_* = リスク変数
 ├── test_data.csv		<---- 
 └── train_labels.csv		<---- customer_ID別に離反結果が掲載(目的変数)
 ```
+
+### log_date
+| 日付| 説明|
+| ---------------------------------- | ----------------------------------------------- |
+|2022-06-09|データ量が多くて主成分分析が回っていない<br>https://www.kaggle.com/code/aliphya/who-would-default-next|
