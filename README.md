@@ -57,9 +57,9 @@ R_* = リスク変数
 |2022-06-11|久しぶりにlightgbmの実装。メモリエラー対策を進めた。<br>ひとまずスコアは出た。明日からは特徴量の精査|
 
 ### 参考にした記事一覧
-LightGBMのパラメータチューニングまとめ
-https://qiita.com/c60evaporator/items/351188110f328ff921b9
-【Python】Pandasのメモリ使用量の削減方法のまとめ
-https://www.st-hakky-blog.com/entry/2020/06/10/093016
-めっちゃ使えるpandasのメモリサイズをグッと抑える汎用的な関数
-https://qiita.com/hiroyuki_kageyama/items/02865616811022f79754
+LightGBMのパラメータチューニングまとめ  
+https://qiita.com/c60evaporator/items/351188110f328ff921b9  
+【Python】Pandasのメモリ使用量の削減方法のまとめ  
+https://www.st-hakky-blog.com/entry/2020/06/10/093016  
+めっちゃ使えるpandasのメモリサイズをグッと抑える汎用的な関数  
+https://qiita.com/hiroyuki_kageyama/items/02865616811022f79754  
