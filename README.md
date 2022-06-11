@@ -35,18 +35,22 @@ R_* = リスク変数
 全191個
 | dtype_name | counts | samples |
 | --- | --- | --- |
-| int8 | 2 | --- |
+| int8 | 2 |B_31, target|
 | float16 | 185 | --- |
-| object | 4 |customer_ID(50文字?), S_2(日付),D_63,D_64 |
+| object | 4 |customer_ID, S_2(日付),D_63,D_64 |
 
-S_2 日別件数
-![image](https://user-images.githubusercontent.com/88239662/173189403-7d6ebc80-4e40-4266-a67c-abecb8af669a.png)
+<int8>  
+B_31 0/1 ほとんど1が立っている。平均0.99
+	
+<object>  
+D_63 CL,CO,CR,XL,XM,XZ
+D_64 -1,O,R,U
 
-D_63 そもそもこれ何??
-![image](https://user-images.githubusercontent.com/88239662/173189436-41965a44-15c6-4aec-8ab2-a2d56109dd69.png)
-
-欠損値が大きい  
+欠損が多い
 D_87 D_88 D_108	D_110 D_111 B_39 D_73 B_42 D_134 D_137 D_138 D_135 D_136 R_9 B_29 D_106 D_132 D_49 R_26 D_76  
+
+カテゴリ的  
+B_30, B_38, d_114, d_116, d_117, d_120, d_126, d_63, d_64, d_66, d_68  
 
 ### idea_list
 |カテゴリ|アイデア詳細|実装済|
