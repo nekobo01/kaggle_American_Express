@@ -30,29 +30,30 @@ R_* = リスク変数
 [B_30', 'B_38', 'd_114', 'd_116', 'd_117', 'd_120', 'd_126', 'd_63', 'd_64', 'd_66', 'd_68'].
 あなたのタスクは、各顧客IDについて、将来の支払い不履行の確率を予測することです（ターゲット=1）。
 このデータセットでは、ネガティブ・クラスは5%でサブサンプルされているので、スコアリング・メトリックでは20倍の重み付けを受けることに注意してください。
-	
 
-| ファイル名                          | 説明|
-| ---------------------------------- | ----------------------------------------------- |
-|train_data.csv|customer_IDごとに複数のstatement dateを持つトレーニングデータ。|
-|train_labels.csv|各 customer_ID のターゲットラベル。|
-|test_data.csv|対応するテストデータ、あなたの目的は、各 customer_ID のターゲット ラベルを予測することです。|
-|sample_submission.csv|正しいフォーマットで作成されたサンプルファイル|
+### 特徴量の特徴
+全191個
+| dtype_name | counts | samples |
+| --- | --- | --- |
+| int8 | 2 | --- |
+| float16 | 185 | --- |
+| object | 4 |customer_ID(50文字?), S_2(日付),D_63,D_64 |
 
-- directory tree
-```
-/kaggle/input/amex-default-prediction/
-├── README.md
-├── sample_submission.csv	<---- 
-├── train_data.csv		<---- 110万行×190特徴量がcustomer_ID別に掲載
-├── test_data.csv		<---- 
-└── train_labels.csv		<---- customer_ID別に離反結果が掲載(目的変数)
+S_2 日別件数
+![image](https://user-images.githubusercontent.com/88239662/173189403-7d6ebc80-4e40-4266-a67c-abecb8af669a.png)
+
+D_63 そもそもこれ何??
+![image](https://user-images.githubusercontent.com/88239662/173189436-41965a44-15c6-4aec-8ab2-a2d56109dd69.png)
+
+欠損値が大きい  
+D_87 D_88 D_108	D_110 D_111 B_39 D_73 B_42 D_134 D_137 D_138 D_135 D_136 R_9 B_29 D_106 D_132 D_49 R_26 D_76  
+
 ```
 ### idea_list
 |カテゴリ|アイデア詳細|実装済|
 |---|---|---|
 |新しい特徴量の検討|曜日によってデータが異なる⇒週末支払傾向のある人は返しにくいなど|未実装|
-|特徴量について知る|特徴量重要度の確認|未実装|
+|特徴量について知る|特徴量重要度の確認|済|
 |新しい特徴量の検討|主成分分析の効果がありそうか検討|未実装|
 
 
@@ -63,15 +64,19 @@ R_* = リスク変数
 |2022-06-09|データ量が多くて主成分分析が回っていない<br>読む⇒https://www.kaggle.com/code/aliphya/who-would-default-next|
 |2022-06-10|コードを日本語に訳しつつ1行ずつ実行して内容理解を進めた。<br>EDAは概ねOK！明日からはモデリングの確認|
 |2022-06-11|久しぶりにlightgbmの実装。メモリエラー対策を進めた。<br>ひとまずスコアは出た。明日からは特徴量の精査|
-|2022-06-12|久しぶりにlightgbmの実装。メモリエラー対策を進めた。<br>ひとまずスコアは出た。明日からは特徴量の精査|
-
+|2022-06-12|---|
 
 ### 参考にした記事一覧
 LightGBMのパラメータチューニングまとめ  
 https://qiita.com/c60evaporator/items/351188110f328ff921b9  
 【初心者向け】特徴量重要度の算出 (LightGBM) 【Python】【機械学習】  
 https://mathmatical22.xyz/2020/04/12/%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e7%89%b9%e5%be%b4%e9%87%8f%e9%87%8d%e8%a6%81%e5%ba%a6%e3%81%ae%e7%ae%97%e5%87%ba-lightgbm-%e3%80%90python%e3%80%91%e3%80%90%e6%a9%9f/  
+【Python】Kaggleで引っ張りだこ！lightgbmの２種類の使い方！Training APIとScikit-learn API！【lightgbm】  
+https://shiokoji11235.com/two_interface_of_lightgbm  
 【Python】Pandasのメモリ使用量の削減方法のまとめ  
 https://www.st-hakky-blog.com/entry/2020/06/10/093016  
 めっちゃ使えるpandasのメモリサイズをグッと抑える汎用的な関数  
 https://qiita.com/hiroyuki_kageyama/items/02865616811022f79754  
+
+
+
