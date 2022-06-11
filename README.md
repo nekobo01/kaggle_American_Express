@@ -70,6 +70,8 @@ LightGBMのパラメータチューニングまとめ
 https://qiita.com/c60evaporator/items/351188110f328ff921b9  
 【初心者向け】特徴量重要度の算出 (LightGBM) 【Python】【機械学習】  
 https://mathmatical22.xyz/2020/04/12/%e3%80%90%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91%e3%81%91%e3%80%91%e7%89%b9%e5%be%b4%e9%87%8f%e9%87%8d%e8%a6%81%e5%ba%a6%e3%81%ae%e7%ae%97%e5%87%ba-lightgbm-%e3%80%90python%e3%80%91%e3%80%90%e6%a9%9f/  
+light GBMでimportanceを出す  
+https://qiita.com/studio_haneya/items/e70e835c26524d506e19  
 【Python】Kaggleで引っ張りだこ！lightgbmの２種類の使い方！Training APIとScikit-learn API！【lightgbm】  
 https://shiokoji11235.com/two_interface_of_lightgbm  
 【Python】Pandasのメモリ使用量の削減方法のまとめ  
