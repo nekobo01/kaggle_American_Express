@@ -89,6 +89,6 @@ https://shiokoji11235.com/two_interface_of_lightgbm
 https://www.st-hakky-blog.com/entry/2020/06/10/093016  
 めっちゃ使えるpandasのメモリサイズをグッと抑える汎用的な関数  
 https://qiita.com/hiroyuki_kageyama/items/02865616811022f79754  
-
-
+Jupyter(IPython)上でメモリ食っている変数を探し出して削除する
+https://qiita.com/AnchorBlues/items/883790e43417640140aa
 
