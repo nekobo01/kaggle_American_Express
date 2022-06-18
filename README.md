@@ -63,7 +63,8 @@ B_30, B_38, d_114, d_116, d_117, d_120, d_126, d_63, d_64, d_66, d_68
 ⇒全数を対象に標準化した時点でメモリ不足エラーが発生。customer_idの最新に限定したほうがいいかも。  
 その上で「平均〇〇数」など過去を考慮した列を追加して学習させる。
 ・精度爆落ちした。恐らく0で埋めたことが大きそうだが、主成分分析で削り過ぎたか？あとは列がずれている？
-
+・fillnaは動くが、dropがとにかく処理落ちる…。なぜ
+	
 ### log_date
 | 日付| 説明|
 | ---------------------------------- | ----------------------------------------------- |
@@ -92,9 +93,11 @@ https://www.st-hakky-blog.com/entry/2020/06/10/093016
 めっちゃ使えるpandasのメモリサイズをグッと抑える汎用的な関数  
 https://qiita.com/hiroyuki_kageyama/items/02865616811022f79754  
 Jupyter(IPython)上でメモリ食っている変数を探し出して削除する
-https://qiita.com/AnchorBlues/items/883790e43417640140aa
+https://qiita.com/AnchorBlues/items/883790e43417640140aa  
 Kaggle モデル保存と読み出し
 https://qiita.com/greco_guitar/items/30e3f1bdcfa6acb2febb
+pickle を使った、学習済みモデルの保存・読み出し方法  
+https://www.sairablog.com/article/pickle-trained-model-save-read.html#.Yq18M1S4pBE.twitter  	
 	
 ### 分析ステップ  
 ▼▼▼▼▼モデルの構築(train)▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼  
