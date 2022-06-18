@@ -95,7 +95,7 @@ https://qiita.com/hiroyuki_kageyama/items/02865616811022f79754
 Jupyter(IPython)上でメモリ食っている変数を探し出して削除する
 https://qiita.com/AnchorBlues/items/883790e43417640140aa  
 Kaggle モデル保存と読み出し
-https://qiita.com/greco_guitar/items/30e3f1bdcfa6acb2febb
+https://qiita.com/greco_guitar/items/30e3f1bdcfa6acb2febb  
 pickle を使った、学習済みモデルの保存・読み出し方法  
 https://www.sairablog.com/article/pickle-trained-model-save-read.html#.Yq18M1S4pBE.twitter  	
 	
@@ -127,5 +127,6 @@ customer_idごとの最新データで抽出-- 924,621行 190列
 	(上記aを対象に)主成分分析 188カラム⇒100カラムに圧縮  
 (a)(b)の結合-- 924,621行 102列(日付とcustomer_IDの分+2)  
 特徴量エンジニアリング-- 924,621行 103列  
-	
+モデル適用  
+予測結果の算出  
 	
