@@ -58,7 +58,18 @@ Understanding NA values in AMEX competition
 https://www.kaggle.com/code/raddar/understanding-na-values-in-amex-competition	
 サマリー：多くのcustomer_idで欠損値の位置が共通するパターンを3つ見つけた。初回入金時に残高0円NAが発生していると思われる。
 ネクスト：欠損値の処理の際、0で埋めるのは悪手ぽい。初回入金時の残高0円パターンがあり、そのフラグを入れておきたい。
+
+AMEX EDA: Even more insane time patterns revealed  
+https://www.kaggle.com/code/pavelvod/amex-eda-even-more-insane-time-patterns-revealed  	
+サマリー：大量のデータにおいて季節性など一定の法則が見られた。
+ネクスト：時系列情報の特徴量を追加?日時で正規化を事前に掛けるとよいかもとのこと。 
 	
+Amex EDA - Iso Forest,Down Sampling & PCA  
+https://www.kaggle.com/code/krishm/amex-eda-iso-forest-down-sampling-pca  
+サマリー：カテゴリ変数がターゲットに与える影響。  
+ネクスト：相関の高いデータはどうせ主成分分析するから…と削除を怠ったが、やったほうが良さそう。  
+年、月、日 といった特徴量も追加したほうが良さそうだね。  
+
 ### idea_list
 ・曜日によってデータが異なる⇒週末支払傾向のある人は返しにくいなど  
 ・特徴量重要度の確認⇒その内容を確認してみる  
