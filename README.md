@@ -70,6 +70,11 @@ https://www.kaggle.com/code/krishm/amex-eda-iso-forest-down-sampling-pca
 ネクスト：相関の高いデータはどうせ主成分分析するから…と削除を怠ったが、やったほうが良さそう。  
 年、月、日 といった特徴量も追加したほうが良さそうだね。  
 
+Feather & Parquet Files : AMEX-Default Prediction  
+https://www.kaggle.com/datasets/ruchi798/parquet-files-amexdefault-prediction?select=test_data.ftr  
+サマリー：このデータを使ってtest,trainが一気に軽くなるみたい。ad_dataより追加可能だったので直接追加しました。  
+	 ダウンロードしなくていいの助かる。  
+	
 ### idea_list
 ・曜日によってデータが異なる⇒週末支払傾向のある人は返しにくいなど  
 ・特徴量重要度の確認⇒その内容を確認してみる  
