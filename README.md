@@ -99,6 +99,8 @@ https://www.kaggle.com/code/krishm/amex-eda-iso-forest-down-sampling-pca
 |2022-06-24|aggを使った特徴量抽出。だいぶスムーズになった。欠損値の0埋めや主成分分析はなしに変更<br>pickle形式で加工済のtrainが落とせるようにした。スムーズ！|  
 	
 ### 参考にした記事一覧
+lightGBMの使い方とハイパーパラメータについて  
+https://datadriven-rnd.com/lightgbm/  
 LightGBMのパラメータチューニングまとめ  
 https://qiita.com/c60evaporator/items/351188110f328ff921b9  
 【初心者向け】特徴量重要度の算出 (LightGBM) 【Python】【機械学習】  
@@ -117,7 +119,7 @@ Kaggle モデル保存と読み出し
 https://qiita.com/greco_guitar/items/30e3f1bdcfa6acb2febb  
 pickle を使った、学習済みモデルの保存・読み出し方法  
 https://www.sairablog.com/article/pickle-trained-model-save-read.html#.Yq18M1S4pBE.twitter  	
-	
+
 ### 分析ステップ  
 ▼▼▼▼▼モデルの構築(train)▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼  
 必要なライブラリの準備
