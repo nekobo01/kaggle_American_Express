@@ -124,7 +124,9 @@ Kaggle モデル保存と読み出し
 https://qiita.com/greco_guitar/items/30e3f1bdcfa6acb2febb  
 pickle を使った、学習済みモデルの保存・読み出し方法  
 https://www.sairablog.com/article/pickle-trained-model-save-read.html#.Yq18M1S4pBE.twitter  	
-
+Memory Trick - Reduce Memory 8x or 16x!(メモリ使用量を1/8にする方法)  
+https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/discussion/308635  	
+	
 ### 分析ステップ  
 ▼▼▼▼▼モデルの構築(train)▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼  
 必要なライブラリの準備
@@ -155,3 +157,6 @@ customer_idごとの最新データで抽出-- 924,621行 190列
 特徴量エンジニアリング-- 924,621行 103列  
 モデル適用  
 予測結果の算出  
+
+924621
+	
