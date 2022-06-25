@@ -102,7 +102,8 @@ https://www.kaggle.com/datasets/ruchi798/parquet-files-amexdefault-prediction?se
 |2022-06-18|エンコーディングを実装<br>主成分の個数指定もできた。joinへの書き換えも進めた|
 |2022-06-19|そもそものデータ処理の順序がcutomer_ID別にしてからじゃないとおかしくなると気付いたので全体修正。<br>pickleの導入で楽になった。ただ出力がうまくいかないの困る|	
 |2022-06-24|aggを使った特徴量抽出。だいぶスムーズになった。欠損値の0埋めや主成分分析はなしに変更<br>pickle形式で加工済のtrainが落とせるようにした。スムーズ！|  
-	
+|2022-06-24|cudf,<br>pickle形式で加工済のtrainが落とせるようにした。スムーズ！|  
+		
 ### 参考にした記事一覧
 lightGBMの使い方とハイパーパラメータについて  
 https://datadriven-rnd.com/lightgbm/  
