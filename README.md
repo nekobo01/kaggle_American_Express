@@ -74,7 +74,11 @@ Feather & Parquet Files : AMEX-Default Prediction
 https://www.kaggle.com/datasets/ruchi798/parquet-files-amexdefault-prediction?select=test_data.ftr  
 サマリー：このデータを使ってtest,trainが一気に軽くなるみたい。ad_dataより追加可能だったので直接追加しました。  
 	 ダウンロードしなくていいの助かる。  
-	
+
+Lag Features Are All You Need  
+https://www.kaggle.com/code/thedevastator/lag-features-are-all-you-need  
+サマリー：Last - FirstとLast / First列を追加するのがオススメ  
+
 ### idea_list
 ・曜日によってデータが異なる⇒週末支払傾向のある人は返しにくいなど  
 ・特徴量重要度の確認⇒その内容を確認してみる  
@@ -103,7 +107,9 @@ https://www.kaggle.com/datasets/ruchi798/parquet-files-amexdefault-prediction?se
 |2022-06-19|そもそものデータ処理の順序がcutomer_ID別にしてからじゃないとおかしくなると気付いたので全体修正。<br>pickleの導入で楽になった。ただ出力がうまくいかないの困る|	
 |2022-06-24|aggを使った特徴量抽出。だいぶスムーズになった。欠損値の0埋めや主成分分析はなしに変更<br>pickle形式で加工済のtrainが落とせるようにした。スムーズ！|  
 |2022-06-24|cudf,DASKに関して調査したが使えなさそう。。。不便…。<br>アカウントID列の軽量化は成功。とはいえまだメモリ不足にはなる。Google colablatoryか？？|  
-		
+|2022-07-06|プロ契約したら回った。モデルをdartに変更<br>dartにはearly_stoppingが効かないので要注意。学習中に落ちないようにPCの設定を変更しました。|  
+|2022-07-07|相関係数が高い変数の削除をしておきたい<br>あとは|  
+
 ### 参考にした記事一覧
 lightGBMの使い方とハイパーパラメータについて  
 https://datadriven-rnd.com/lightgbm/  
@@ -127,7 +133,7 @@ pickle を使った、学習済みモデルの保存・読み出し方法
 https://www.sairablog.com/article/pickle-trained-model-save-read.html#.Yq18M1S4pBE.twitter  	
 Memory Trick - Reduce Memory 8x or 16x!(メモリ使用量を1/8にする方法)  
 https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/discussion/308635  	
-	
+
 ### 分析ステップ  
 ▼▼▼▼▼モデルの構築(train)▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼  
 必要なライブラリの準備
