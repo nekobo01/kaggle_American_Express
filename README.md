@@ -79,6 +79,10 @@ Lag Features Are All You Need
 https://www.kaggle.com/code/thedevastator/lag-features-are-all-you-need  
 サマリー：Last - FirstとLast / First列を追加するのがオススメ  
 
+Amex LGBM Dart CV 0.7977  
+https://www.kaggle.com/code/ragnar123/amex-lgbm-dart-cv-0-7977  
+サマリー：seed 42 , 最終地 - 平均値列を追加するのがオススメ
+	
 ### idea_list
 ・曜日によってデータが異なる⇒週末支払傾向のある人は返しにくいなど  
 ・特徴量重要度の確認⇒その内容を確認してみる  
